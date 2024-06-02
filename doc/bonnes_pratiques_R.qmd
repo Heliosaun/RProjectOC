@@ -1,0 +1,43 @@
+---
+title: "Guide des bonnes pratiques en R"
+format: html
+editor: visual
+---
+
+## Introduction
+
+Ce document présente 5 conseils et bonnes pratiques en R pour débuter.
+
+## **Conseil n° 1 :** Ne pas enregistrer les données dans un fichier `.RData` à la fermeture d’une session.
+
+  Par défaut, les données et l’historique des commandes sont automatiquement enregistrés. Il est déconseillé de laisser ces paramètres par défaut pour les personnes qui débutent, car vous pouvez oublier les modifications déjà réalisées sur les données.
+
+  Une bonne pratique : relancer les scripts à chaque ouverture de RStudio afin d’être sûr des modifications réalisées sur les données.
+
+## **Conseil n° 2 :** Maintenir les packages, R et Rstudio à jour.
+
+  Les packages peuvent être mis à jour dans l’onglet Packages puis en cliquant sur `Update` ou dans le menu `Tools > Check for Package Update`. À faire au moins une fois par mois.
+
+  Lorsqu’une nouvelle version de R est disponible, il est conseillé de la télécharger dans un nouveau dossier à part (ce qui est fait par défaut). Il n’y a aucun problème à avoir plusieurs versions de R sur son ordinateur, il faut par contre vérifier que la bonne est bien utilisée (premier texte affiché dans la console ou `sessionInfo()` ou `Tools > Global Options > R general > R version`).
+
+  Enfin, RStudio informe quand une nouvelle mise à jour est disponible.
+
+## **Conseil n° 3 :** Apprenez à bien gérer `Git` avec `RStudio`.
+
+  Pour apprendre à gérer parfaitement Git et RStudio, je vous recommande de lire les ressources :
+
+[Utiliser Git avec RStudio](https://book.utilitr.org/03_Fiches_thematiques/Fiche_git_utilisation.html) du projet `{utilitR}` de l'*Insee*.
+
+[Utiliser GIT avec R](https://linogaliana.gitlab.io/collaboratif/git.html#des-bases-de-git) de Lino GALIANA, extrait de *Travail collaboratif avec R*.
+
+L’article [Travailler avec Git via RStudio et versionner son code](https://thinkr.fr/travailler-avec-git-via-rstudio-et-versionner-son-code/) du blog de *ThinkR* par Elena SALETTE.
+
+## **Conseil n° 4 :** Enregistrez régulièrement vos fichiers.
+
+  Par défaut, le fichier est enregistré à chaque compilation avec `Render` , mais c’est mieux d’enregistrer plus souvent.
+
+  Par rapport à `Git`, il est conseillé de faire un `commit` (enregistrer une version d’un ou plusieurs fichier(s)) avant et après chaque développement. Par exemple, faites un commit avant d'importer vos données dans R et après avoir écrit le code et les avoir importées.
+
+## **Conseil n° 5 :** Attention à la casse
+
+  R, comme beaucoup de langages de programmation, est sensible à la casse, c’est-à-dire qu’il fait la différence entre majuscule et minuscule. Si vous créez l’objet a puis qu'ensuite vous écrivez A \* 2 , R affiche une erreur en vous disant que A est un objet inconnu. La bonne pratique est d’utiliser les minuscules et d’écrire en `snake_case`, c’est-à-dire en détachant les mots écrits en minuscules par des underscores.
