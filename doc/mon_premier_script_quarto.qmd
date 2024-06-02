@@ -10,7 +10,7 @@ editor: visual
 
 Ceci est un **paragraphe** d'introduction pour
 prendre en main *Quarto*
-L'avantage de *Quarto* est de permettre une meilleure ***reproductibilité***, ***réutilisation*** et ***transmission*** du code `R`dans `RStudio`.
+L'avantage de *Quarto* est de permettre une meilleure ***reproductibilité***, ***réutilisation*** et ***transmission*** du code `R` dans `RStudio`.
 
 ## Quarto
 
@@ -32,3 +32,11 @@ You can add options to executable code like this
 ```
 
 The `echo: false` option disables the printing of code (only output is displayed).
+
+[Le site de formation OpenClassrooms](https://openclassrooms.com/)
+
+```{r}
+a <- 2
+a * 2
+```
+
