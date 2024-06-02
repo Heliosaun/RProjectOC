@@ -1,9 +1,16 @@
 ---
 title: "Mon premier script Quarto"
 author: "Esteban Techer"
-format: pdf
+format:
+  pdf: 
+    toc: true
 editor: visual
 ---
+## Introduction
+
+Ceci est un **paragraphe** d'introduction pour
+prendre en main *Quarto*
+L'avantage de *Quarto* est de permettre une meilleure ***reproductibilité***, ***réutilisation*** et ***transmission*** du code `R`dans `RStudio`.
 
 ## Quarto
 
